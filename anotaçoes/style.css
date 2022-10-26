@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* inicio logo da netflix */
+.tela {
+    width: 200px;
+    height: 300px;
+    background-color: black;
+    
+}
+
+.quadrado {
+    border-top: 25px solid;
+    border-bottom: 25px solid;
+    border-left: 25px solid;
+    border-right: 25px solid;
+}
+
+.netflix {
+    width: 50px;
+    height: 250px;
+    background: #b20710;
+    position: relative;
+    
+
+}
+
+.netflix::before {
+    content: "";
+    width: 50px;
+    height: 250px;
+    background-color: #b20710;
+    position: absolute;
+    left: 90px;
+}
+
+.netflix::after {
+    content: "";
+    width: 175px;
+    height: 20px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -10px;
+    left: -15px;
+    border-radius: 50%;
+
+}
+
+.span2 {
+    left: 23px;
+    width: 150px;
+    border: 5px solid white;
+    border-radius: 50%;
+    filter: blur(5px);
+    position: absolute;
+
+}
+
+.quadrado .netflix span {
+    width: 50px;
+    height: 250px;
+    background: fixed#e50914;
+    position: absolute;
+    left: 46px;
+    transform: skew(20deg);
+    box-shadow: 0 0 10px -4px;
+}
+
+/* final do logo da netflix */
+
+/* imagem flutuante  */
+.GF1{
+    padding: 75px;
+    max-width: 640px;
+    transform: translateY( 0px);
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+
+    50% { transform: translateY(-30px); }
+
+    100% { transform: translateY(0px); }
+}
+
+/* imagem flutuante fim */
+
+
+
